@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary Result</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fb;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4A90E2;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            white-space: pre-wrap; /* Allows the text to break across lines */
+            word-wrap: break-word;
+            word-break: break-word;
+        }
+
+        .button {
+            display: block;
+            text-align: center;
+            padding: 12px 20px;
+            background-color: #4A90E2;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.1em;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #357ABD;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 0.9em;
+            color: #888;
+            margin-top: 30px;
+        }
+
+        .footer a {
+            color: #4A90E2;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Summarized Text</h1>
+        <p>{{ summary_text }}</p>
+        <a href="/" class="button">Go back to the main page</a>
+
+        <div class="footer">
+            <p>Powered by <a href="https://www.flask.palletsprojects.com/">Flask</a></p>
+        </div>
+    </div>
+</body>
+</html>
