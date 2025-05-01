@@ -72,3 +72,25 @@ This method uses an advanced graph-based algorithm called **TextRank**, which is
 
 > This approach is considered more context-aware and tends to produce summaries that better preserve the meaning of the original text.
 
+## 🚀 Running the App
+
+Follow these steps to get the Text Summarizer up and running on your local machine:
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/text-summarizer.git
+cd text-summarizer
+
+# For Windows
+python -m venv venv
+venv\Scripts\activate
+
+# For macOS/Linux
+python3 -m venv venv
+source venv/bin/activate
+
+pip install -r requirements.txt
+
+python app.py
+
